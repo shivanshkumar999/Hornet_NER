@@ -24,9 +24,11 @@ The application will use spaCy to perform NER on the input text and identify any
 The identified PII entities will be displayed on the web page.
 
 ## Dependencies
-Flask
-spaCy
-en_core_web_sm (spaCy model for English language)
+<ul>
+   <li>Flask</li>
+   <li>spaCy</li>
+   <li>en_core_web_sm (spaCy model for English language)</li>
+</ul>
 
 # DEMO
 
