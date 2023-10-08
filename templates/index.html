@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            NER
+        </title>
+        <style>
+            body{
+                text-align: center;
+            }
+            form{
+                display: block;
+            }
+            .footer{
+                font-weight: bold;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+            p{
+                text-align: center;
+            }
+            .output{
+                width: 50%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Name Entity Recognition - Hornet Internship Project</h1>
+        <p>This API takes input and gives you Personally Identifiable Information in the query.</p>
+        <div>
+            <form action="" method="post" enctype="multipart/form-data
+            ">
+        <input type="text" name="query" id="query" placeholder="query...">
+        <input type="submit" name="submit" id="submit">
+        </form>
+        </div>
+        <div class="output">
+            {% if output %}
+                <p>{{ output }}</p>
+            {% endif %}
+        </div>
+        <div class="footer">
+            <p>This model is based on Spacy, a py package for NLP.</p>
+        </div>
+    </body>
+</html>
